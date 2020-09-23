@@ -32,7 +32,7 @@ import pandas as pd
 core_df = pd.read_csv("core_data.csv")
 core_df=core_df.set_index("Image")
 i=0
-with open('output.html', 'w') as f:
+with open('pothole_map.html', 'w') as f:
     f.write(head)
     space = """
     """
