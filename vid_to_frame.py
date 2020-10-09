@@ -1,3 +1,5 @@
+#Step 1.
+#Take a video frame placed in \road_survey_vid\upload_folder. it strips the video into frames
 import cv2
 import os
 vid_list= os.listdir(r"road_survey_vid\upload_folder")
@@ -9,7 +11,7 @@ path = r"C:\Users\manis\PycharmProjects\pothole_heatmap\frames"
 #seconds = 100
 fps = vidcap.get(cv2.CAP_PROP_FPS) # Gets the frames per second
 print(fps)
-multiplier = int(fps * seconds)
+
 frame_no = 0
 while success:
   frame_no += 1
