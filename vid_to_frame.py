@@ -6,7 +6,7 @@ vid_list= os.listdir(r"road_survey_vid\upload_folder")
 vidcap = cv2.VideoCapture(r"road_survey_vid\upload_folder\%s"%vid_list[0])
 success,image = vidcap.read()
 count = 0
-path = r"C:\Users\manis\PycharmProjects\pothole_heatmap\frames"
+path = r"frames"
 # code below will extract one frame after every 0.1 sec, but will change the frequency of picking frame laatter when tuning
 #seconds = 100
 fps = vidcap.get(cv2.CAP_PROP_FPS) # Gets the frames per second

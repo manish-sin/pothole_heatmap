@@ -19,7 +19,7 @@ print(vid_fps)
 extract_fps = 59
 multiplier = int(vid_fps/extract_fps)
 print(multiplier)
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+pytesseract.pytesseract.tesseract_cmd = r"Tesseract-OCR\tesseract.exe"
 def extract_coordinate(frame):
     frame_loc = "frames\%s"%frame
     #print(frame_loc)
@@ -37,15 +37,15 @@ def extract_coordinate(frame):
         latitude = float(pytesseract.image_to_string(lat))
     except ValueError:
         latitude = 0.00000
-        src = os.path.join(r"C:\Users\manis\PycharmProjects\pothole_heatmap\frames",frame)
-        shutil.copy(src, r"C:\Users\manis\PycharmProjects\pothole_heatmap\wrong_coordinate_extacrtion")
+        src = os.path.join(r"frames",frame)
+        shutil.copy(src, r"wrong_coordinate_extacrtion")
 
     try:
         longitude = float(pytesseract.image_to_string(long))
     except ValueError:
         longitude = 0.00000
-        src = os.path.join(r"C:\Users\manis\PycharmProjects\pothole_heatmap\frames", frame)
-        shutil.copy(src, r"C:\Users\manis\PycharmProjects\pothole_heatmap\wrong_coordinate_extacrtion")
+        src = os.path.join(r"frames", frame)
+        shutil.copy(src, r"wrong_coordinate_extacrtion")
 
     #cv2.imshow("longitude", long)
     #cv2.imshow("latitude", lat)

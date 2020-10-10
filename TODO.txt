@@ -1,0 +1,4 @@
+1. Digit extraction is not efficient the dcimal place is misplaced several times
+2. Videos naem to be stored as date fro easy tracking
+3. program to classify photos as pot hole or no pot hole for training
+4. Object detection
