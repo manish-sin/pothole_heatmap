@@ -18,7 +18,7 @@ vidcap = cv2.VideoCapture(vid_loc)
 success,image = vidcap.read()
 vid_fps = vidcap.get(cv2.CAP_PROP_FPS)
 print(vid_fps)
-extract_fps = 59
+extract_fps = 5
 multiplier = int(vid_fps/extract_fps)
 print(multiplier)
 
