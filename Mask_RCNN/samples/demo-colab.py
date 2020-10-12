@@ -15,7 +15,7 @@ import numpy as np
 import skimage.io
 
 import matplotlib
-matplotlib.use('TkAgg')
+#matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 
 # Root directory of the project

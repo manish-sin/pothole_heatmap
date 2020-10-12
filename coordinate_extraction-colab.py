@@ -11,7 +11,7 @@ import pytesseract
 import shutil
 
 Root_dir = os.path.abspath(".")
-upload_folder_loc = os.path.join(Root_dir, r"road_survey_vid\upload_folder")
+upload_folder_loc = os.path.join(Root_dir, r"road_survey_vid/upload_folder")
 vid_list= os.listdir(upload_folder_loc)
 vid_loc = os.path.join(upload_folder_loc, vid_list[0])
 vidcap = cv2.VideoCapture(vid_loc)
@@ -23,7 +23,7 @@ multiplier = int(vid_fps/extract_fps)
 print(multiplier)
 
 
-pytesseract.pytesseract.tesseract_cmd = os.path.join(Root_dir, r"Tesseract-OCRabs\tesseract.exe")
+#pytesseract.pytesseract.tesseract_cmd = os.path.join(Root_dir, r"Tesseract-OCRabs\tesseract.exe")
 def extract_coordinate(frame):
 
     frame_loc = os.path.join(Root_dir,"frames", frame)

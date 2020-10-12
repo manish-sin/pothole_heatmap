@@ -5,7 +5,7 @@ import os
 Root_dir = os.path.abspath(".")
 
 
-upload_folder_dir = os.path.join(Root_dir, r"road_survey_vid\upload_folder" )
+upload_folder_dir = os.path.join(Root_dir, r"road_survey_vid/upload_folder" )
 
 vid_list= os.listdir(upload_folder_dir)
 print(vid_list)
